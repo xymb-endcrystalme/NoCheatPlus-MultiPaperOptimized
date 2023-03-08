@@ -290,7 +290,7 @@ public class MovingListener extends CheckListener implements TickListener, IRemo
         if (!pData.isCheckActive(CheckType.MOVING, player)) return;
         final MovingData data = pData.getGenericInstance(MovingData.class);
         final MovingConfig cc = pData.getGenericInstance(MovingConfig.class);
-    
+    /*
         if (pData.isCheckActive(CheckType.MOVING_SURVIVALFLY, player) && survivalFly.checkBed(player, pData, cc, data)) {
 
             // Check if the player has to be reset.
@@ -320,8 +320,9 @@ public class MovingListener extends CheckListener implements TickListener, IRemo
             data.prepareSetBack(newTo); // Should be enough. 
             player.teleport(newTo, BridgeMisc.TELEPORT_CAUSE_CORRECTION_OF_POSITION);
         }
+        */
         // Reset bed ...
-        else data.wasInBed = false;
+//        else data.wasInBed = false;
     }
 
 
